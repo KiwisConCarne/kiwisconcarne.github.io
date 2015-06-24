@@ -14,8 +14,8 @@ Below are the members of KCC that didn't forget to send their bio and pic.
 <br/>
 
 {% for author in site.data.authors %}
-    <div class"memberDiv">
-      <div class="memberImage"><img alt="{{ author.firstname }}" src="{{ site.baseurl }}/images/authors/{{ author.firstname }}.jpg" /></div>
+    <div class"authorDiv">
+      <div class="authorImage"><img alt="{{ author.firstname }}" src="{{ site.baseurl }}/images/authors/{{ author.firstname }}.jpg" /></div>
       <span id="{{ author.firstname }}" class="authorName">{{ author.firstname }} {{ author.lastname }}</span>: {{ author.bio }}
       <br/>
       Email: <a href="mailto:{{ author.email }}">{{ author.email }}</a> <br/>
