@@ -7,3 +7,15 @@ permalink: /about/
 We are Kiwis con attitude and carne. Our first reason to exist: create for & inhabiting one of the best bar of Brussels, the Pantin. This simple website (eager to be stuffed with any shenanigans...) will be a journal of our little experiments in coding for and from this glorious pub. Stay tuned! 
 
 Upcoming here, a presentation of the team!
+
+{% for author in site.data.authors %}
+    <div class="memberImage"><img alt="{{ author.firstname }}" src="{{ site.baseurl }}/assets/images/{{ author.firstname }}.jpg" /></div>
+    <span id="{{ author.firstname }}" class="authorName">{{ author.firstname }} {{ author.lastname }}</span>: {{ author.bio }}
+    <br/>
+    Email: <a href="mailto:{{ author.email }}">{{ author.email }}</a> <br/>
+    Website: <a href="{{ author.website }}">{{ author.website }}</a>
+    {% unless forloop.last %}
+      <center><hr width="60%"/></center>
+      <br/>
+    {% endunless %}
+{% endfor %}
