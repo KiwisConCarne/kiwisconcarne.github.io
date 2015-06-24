@@ -12,7 +12,7 @@ Upcoming here, a presentation of the team!
 <br/>
 
 {% for author in site.data.authors %}
-    <div class="memberImage"><img alt="{{ author.firstname }}" src="{{ site.baseurl }}/assets/images/{{ author.firstname }}.jpg" /></div>
+    <div class="memberImage"><img alt="{{ author.firstname }}" src="{{ site.baseurl }}/images/authors/{{ author.firstname }}.jpg" /></div>
     <span id="{{ author.firstname }}" class="authorName">{{ author.firstname }} {{ author.lastname }}</span>: {{ author.bio }}
     <br/>
     Email: <a href="mailto:{{ author.email }}">{{ author.email }}</a> <br/>
