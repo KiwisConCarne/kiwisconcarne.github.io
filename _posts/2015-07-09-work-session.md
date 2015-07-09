@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  work session
-date:   2015-05-29 20:50:00
+date:   2015-07-09 20:50:00
 author: Roman
 ---
 
